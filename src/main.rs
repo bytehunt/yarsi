@@ -5,7 +5,6 @@ use ascii::ARCH;
 use colors::*;
 use nixinfo::*;
 
-use nixinfo;
 
 fn main() {
     let distro = nixinfo::distro();
