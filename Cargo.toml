@@ -1,5 +1,5 @@
 [package]
-name = "yarsi"
+name    = "yarsi"
 version = "0.1.0"
 edition = "2021"
 authors = [ "PwnWriter < hey@pwnwriter.xyz>", "ashokcpg < hey@ashokcpg.com >" ]

@@ -3,15 +3,33 @@ mod colors;
 
 use ascii::ARCH;
 use colors::*;
-use columns::Columns;
-use nixinfo::distro;
+use nixinfo::*;
+
+use nixinfo;
 
 fn main() {
-  println!("{}", ARCH);
-    if let Ok(distro_info) = distro() {
-        println!("Distribution: {}", distro_info);
-    } else {
-        println!("Error getting distribution information");
-    }
-}
+    let distro = nixinfo::distro();
+    let shell = nixinfo::env("SHELL");
+    let uptime = nixinfo::uptime();
+    let kernel = nixinfo::kernel();
+    let wm = nixinfo::environment();
 
+    println!(
+        "\n{}  {}  {}",
+        CYAN,
+        " ",
+        &distro.unwrap().replace("\"", "")
+    );
+    println!(
+        "  {}  {}  {}",
+        GREEN,
+        " ",
+        &shell.unwrap().replace("/usr/bin/", "")
+    );
+    println!("  {}  {}  {}", BLUE, "󱑇 ", &uptime.unwrap());
+    println!("  {}  {}  {}", YELLOW, " ", &kernel.unwrap());
+    println!("  {}  {}  {}", MAGENTA, "󱀜 ", &wm.unwrap());
+    
+    println!("{}", RESET);
+    println!("{}", ARCH);
+}
