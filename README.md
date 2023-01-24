@@ -23,9 +23,7 @@ $ curl https://sh.rustup.rs -sSf | sh
 ## installation ❤️‍🩹
 
 ```
-$ git clone --depth=1 https://github.com/BinaryBrainiacs/yarsi
-$ cd yarsi 
-$ cargo install --path .
+$ cargo install --git https://github.com/BinaryBrainiacs/yarsi
 ```
 
 <p align="center">
