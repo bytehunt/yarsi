@@ -9,4 +9,4 @@ authors = [ "PwnWriter < hey@pwnwriter.xyz>", "ashokcpg < hey@ashokcpg.com >" ]
 [dependencies]
 nixinfo = "0.3.2"
 columns = { git = "https://github.com/S0raWasTaken/Columns", branch = "master" }
-
+whoami  = "1.3.0"
