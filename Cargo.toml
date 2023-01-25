@@ -2,7 +2,14 @@
 name    = "yarsi"
 version = "0.1.0"
 edition = "2021"
-authors = [ "PwnWriter < hey@pwnwriter.xyz>", "ashokcpg < hey@ashokcpg.com >" ]
+authors = [ "PwnWriter < hey@pwnwriter.xyz >", "ashokcpg < hey@ashokcpg.com >" ]
+description = "Yet another rust system info fetcher."
+readme = "README.md"
+repository = "https://github.com/BinaryBrainiacs/yarsi"
+homepage = "https://github.com/BinaryBrainiacs/yarsi.git"
+license = "MIT"
+keywords = ["neofetch", "sysfetch", "sys-info", "modern" ]
+categories = ["accessibility", "command-line-utilities",]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -10,3 +17,7 @@ authors = [ "PwnWriter < hey@pwnwriter.xyz>", "ashokcpg < hey@ashokcpg.com >" ]
 nixinfo = "0.3.2"
 columns = { git = "https://github.com/S0raWasTaken/Columns", branch = "master" }
 whoami  = "1.3.0"
+
+[profile.release]
+lto = true
+panic = "abort"
