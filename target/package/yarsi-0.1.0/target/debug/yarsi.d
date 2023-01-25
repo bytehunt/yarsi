@@ -1,1 +1,0 @@
-/home/pwn/yarsi/target/package/yarsi-0.1.0/target/debug/yarsi: /home/pwn/yarsi/target/package/yarsi-0.1.0/src/ascii.rs /home/pwn/yarsi/target/package/yarsi-0.1.0/src/colors.rs /home/pwn/yarsi/target/package/yarsi-0.1.0/src/main.rs /home/pwn/yarsi/target/package/yarsi-0.1.0/src/wm.rs
