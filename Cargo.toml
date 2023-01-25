@@ -8,8 +8,8 @@ readme = "README.md"
 repository = "https://github.com/BinaryBrainiacs/yarsi"
 homepage = "https://github.com/BinaryBrainiacs/yarsi.git"
 license = "MIT"
-keywords = ["neofetch", "sysfetch", "sys-info", "modern" ]
-categories = ["accessibility", "command-line-utilities",]
+keywords = ["neofetch", "sysfetch", "sys-info", "modern", "fast", "elegant" ]
+categories = ["accessibility", "command-line-utilities", "CLI" ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
