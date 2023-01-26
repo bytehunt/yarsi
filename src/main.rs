@@ -2,7 +2,7 @@ mod ascii;
 mod colors;
 mod wm;
 
-use ascii::STUX;
+use ascii::CAT;
 use colors::*;
 use columns::Columns;
 
@@ -21,7 +21,7 @@ fn main() {
 
     // Create Columns struct with the information
     let fetch_info = Columns::from(vec![
-        format!("{BLUE}{STUX}").split('\n').collect::<Vec<&str>>(),
+        format!("{BLUE}{CAT}").split('\n').collect::<Vec<&str>>(),
         vec![
             // Add the username and hostname
             &format!(
@@ -30,17 +30,17 @@ fn main() {
                 whoami::hostname()
             ),
             // Add the distro name
-            &format!("{CYAN}os{WHITE}  ~ {CYAN}{}{BLUE}", whoami::distro()),
+            &format!("{CYAN} {WHITE}~ {CYAN}{}{BLUE}", whoami::distro()),
             // Add the uptime
-            &format!("{YELLOW}upt{WHITE} ~ {YELLOW}{}{BLUE}", uptime),
+            &format!("{YELLOW}神{WHITE}~ {YELLOW}{}{BLUE}", uptime),
             // Add the window manager
-            &format!("{GREEN}wm {WHITE} ~ {GREEN}{wm}{BLUE}"),
+            &format!("{GREEN}{WHITE} ~ {GREEN}{wm}{BLUE}"),
             // Add the memory information
-            &format!("{MAGENTA}mem{WHITE} ~ {RED}{}{BLUE}", mem),
+            &format!("{MAGENTA}{WHITE} ~ {RED}{}{BLUE}", mem),
             // Add the kernel version
-            &format!("{GREEN}kr{WHITE}  ~ {YELLOW_BRIGHT}{}{BLUE}", kernel),
+            &format!("{GREEN}הּ{WHITE} ~ {YELLOW_BRIGHT}{}{BLUE}", kernel),
             // Add the CPU information
-            &format!("{YELLOW}cpu{WHITE} ~ {BLUE}{}{BLUE}", cpu),
+            &format!("{YELLOW}{WHITE} ~ {BLUE}{}{BLUE}", cpu),
             // Add the line of dots
             &format!("{RED}● {YELLOW}● {CYAN}● {BLUE}● {WHITE}●"),
         ],
