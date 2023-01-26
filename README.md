@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img src="https://0x0.st/oFrC.png" widht=300px height=250px alt="yarsi"/><br/>
+	<img src="https://0x0.st/oFbO.png" widht=300px height=250px alt="yarsi"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 	Yarsi:&nbsp;Yet another rust sys info fetcher ✨ </a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
