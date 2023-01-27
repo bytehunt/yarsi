@@ -12,7 +12,6 @@
 </p>
 
 
-
 <h2 align="center">Showcase</h2>
 <div style="text-align:center;">
   <img src="https://github.com/pwnwriter/files/raw/main/yarsi/yarsi.gif" >
@@ -28,6 +27,8 @@ $ curl https://sh.rustup.rs -sSf | sh
  ```
  
 ## installation ❤️‍🩹
+
+`Yarsi` has two branches , [nerd-fonts](https://github.com/BinaryBrainiacs/yarsi/tree/nerd-fonts) and [default](https://github.com/BinaryBrainiacs/yarsi). Check them, installation processes is as follows.
 
 - using git
 ```
